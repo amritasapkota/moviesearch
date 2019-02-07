@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movie Search</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="w3.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap.css">
+        <script src="jquery-3.3.1.min.js"></script>
+        <script>
+            //define the api address to make call to api server
+            var api_url = 'http://localhost/amz/movie/';
+        </script>
+        <style>
+            /* css defination for raccoon images */
+            .movie-image{
+                width: 100%;
+                height: 250px;
+            }
+
+            .full-movie-image{
+                width: auto;
+                height: 300px;
+            }
+
+            .image-container{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="w3-container w3-teal w3-padding">
+            <h1>MOVIE SEARCH ENGINE</h1>
+        </div>
+        <div class="w3-content w3-border-bottom w3-border-gray">
+            <div class="w3-cell-row w3-section">
+                <div class="w3-cell">
+                    <input id="searchmovie" name="movie" type="search" placeholder="type here" class="w3-input w3-border w3-round-large" >
+                </div>
+                <div class="w3-cell w3-padding" style="width:50px">
+                    <button id="searchbutton" type="button" class="w3-button w3-blue">GO</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-content" id="main_container">
+            <div class="w3-row w3-margin">
+                <div class="w3-padding-48 w3-xxxlarge w3-text-light-gray w3-center">
+                    <p>Search any movie</p>
+                </div>
+            </div>
+        </div>
+        <script src="movie.js"></script>
+    </body>
+</html>
